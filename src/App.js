@@ -1,7 +1,7 @@
 import "./App.css";
 import moviePage from "./components/pages/moviePage.component.tsx";
 import loginPage from "./components/pages/loginPage.component.tsx";
-import registrationPage from "./components/pages/registrationPage.component.tsx";
+import RegistrationPage from "./components/pages/RegistrationPage.tsx";
 
 function App() {
   return (
@@ -16,18 +16,16 @@ function App() {
         <i>Created by</i> <strong>Vail Arvia</strong>
       </p>
       <div>
-        {/* {moviePage} */}
         <moviePage />
       </div>
       <div>
         <h2>LogIn</h2>
-        {loginPage}
-        {/* <loginPage /> */}
+        <loginPage />
       </div>
       <div>
         <h2>Registration</h2>
-        {registrationPage}
-        {/* <registrationPage /> */}
+
+        <RegistrationPage />
       </div>
     </div>
   );
