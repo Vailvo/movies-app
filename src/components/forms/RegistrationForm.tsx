@@ -4,6 +4,7 @@ class RegistrationForm extends Component {
   render() {
     return (
       <>
+        <h1>Register</h1>
         <form>
           Email: <input></input> <br />
           Username: <input type="text"></input> <br />
