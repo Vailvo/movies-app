@@ -1,34 +1,68 @@
 import "./App.css";
-import moviePage from "./components/pages/moviePage.component.tsx";
-import loginPage from "./components/pages/loginPage.component.tsx";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import MoviePage from "./components/pages/MoviePage.tsx";
+import LoginPage from "./components/pages/LoginPage.tsx";
 import RegistrationPage from "./components/pages/RegistrationPage.tsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="navBar">
-        <button>Home</button> <button>Movies</button> <button>Log In</button>{" "}
-        <button>Register</button> <button>FAQ</button>
-      </header>
+      <Router>
+        <header className="navBar">
+          <button Link to="/">
+            Home
+          </button>{" "}
+          <button Link to="/movies">
+            Movies
+          </button>{" "}
+          <button Link to="/login">
+            Log In
+          </button>{" "}
+          <button Link to="/register">
+            Register
+          </button>{" "}
+          <button Link to="/faq">
+            FAQ
+          </button>
+        </header>
+      </Router>
       <p className="subTitle">Movie App</p>
       <p className="message">Welcome!</p>
       <p>
         <i>Created by</i> <strong>Vail Arvia</strong>
       </p>
-      <div>
-        <moviePage />
-      </div>
-      <div>
-        <h2>LogIn</h2>
-        <loginPage />
-      </div>
-      <div>
-        <h2>Registration</h2>
 
-        <RegistrationPage />
-      </div>
+      {/* <Routes>
+        <Route path="/">
+          <Home />
+        </Route>
+        <Route path="/movies">
+          <MoviePage />
+        </Route>
+        <Route path="/login">
+          <LoginPage />
+        </Route>
+        <Route path="/register">
+          <RegistrationPage />
+        </Route>
+        <Route path="/faq">
+          <h1>FAQ Page</h1>
+        </Route>
+      </Routes> */}
     </div>
   );
+
+  function Home() {
+    return <h2>Home</h2>;
+  }
+
+  function MoviePage() {
+    return (
+      <div>
+        <MoviePage />
+      </div>
+    );
+  }
 }
 
 export default App;

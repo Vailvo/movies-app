@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MovieForm from "../forms/MovieForm";
+import MovieForm from "../forms/MovieForm.tsx";
 
 class MoviePage extends Component {
   render() {
