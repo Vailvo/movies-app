@@ -1,13 +1,19 @@
 import React, { Component } from "react";
+import "../forms/forms-validation/css/style.css";
 
 class LoginForm extends Component {
   render() {
     return (
       <>
-        <form>
-          Username: <input></input>
-          Password: <input></input>
-        </form>
+        <div className="form-container">
+          <form className="form-field">
+            Username: <input></input>
+            <br />
+            Password: <input></input>
+            <br />
+            <button>Login</button>
+          </form>
+        </div>
       </>
     );
   }

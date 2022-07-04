@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import React, { Component } from "react";
+import HomePage from "./components/pages/HomePage.tsx";
+import FaqPage from "./components/pages/FaqPage.tsx";
 import MoviePage from "./components/pages/MoviePage.tsx";
 import LoginPage from "./components/pages/LoginPage.tsx";
 import RegistrationPage from "./components/pages/RegistrationPage.tsx";
@@ -10,12 +12,18 @@ class App extends Component {
     return (
       <>
         <div className="App">
+          <div className="logo-cont">
+            <strong className="subTitle">Movie App</strong>
+            <i>Created by</i> <strong>Vail Arvia</strong>
+          </div>
           <Router>
             <header className="navBar">
               <button>
                 <Link to="/">Home</Link>
               </button>{" "}
-              <Link to="/movies">Movies</Link>{" "}
+              <button>
+                <Link to="/movies">Movies</Link>{" "}
+              </button>
               <button>
                 {" "}
                 <Link to="/login">Log In</Link>
@@ -30,23 +38,17 @@ class App extends Component {
               </button>
             </header>
 
-            <p className="subTitle">Movie App</p>
             <p className="message">Welcome!</p>
-            <p>
-              <i>Created by</i> <strong>Vail Arvia</strong>
-            </p>
 
             <Routes>
-              {/* <Route path="/"></Route> */}
+              <Route path="/" element={<HomePage />} exact />
               <Route path="/movies" element={<MoviePage />} exact />
 
               <Route path="/login" element={<LoginPage />} exact />
 
               <Route path="/register" element={<RegistrationPage />} exact />
 
-              {/* <Route path="/faq">
-              <h1>FAQ Page</h1>
-            </Route> */}
+              <Route path="/faq" element={<FaqPage />} exact />
             </Routes>
           </Router>
         </div>

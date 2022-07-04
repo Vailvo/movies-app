@@ -1,27 +1,50 @@
 .App {
   text-align: center;
+  border: yellowgreen dashed 2px;
+}
+.logo-cont {
+  text-align: left;
+  margin-left: 20px;
+  padding-left: 10px;
 }
 .navBar {
   padding: 25px;
-  border: 2px dashed red;
+  /* border: 2px dashed red; */
 }
-
+button:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: black;
+}
 button {
   color: rgba(18, 187, 209, 0.5);
-  background-color: rgba(240, 243, 255, 0.425);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: larger;
   padding: 8px;
+  margin: 5px;
   border: none;
   border-radius: 5px;
 }
-
+/* a:link:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: black;
+} */
+a:link {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 olivedrab;
+  color: rgb(9, 75, 133);
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out;
+}
 .subTitle {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: xx-large;
-  border: orange 2px dashed;
+  /* border: orange 2px dashed; */
+  margin-right: 10px;
 }
 
 .message {
-  border: green 2px dashed;
+  /* border: green 2px dashed; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: larger;
 }
