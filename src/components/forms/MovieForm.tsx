@@ -7,14 +7,15 @@ class MovieForm extends Component {
       <>
         <div className="form-container">
           <form className="form-field">
-            Movie Title: <input></input>
+            Movie Title: <input type="text" required></input>
             <br />
-            Director: <input></input>
+            Director: <input type="text" required></input>
             <br />
-            Year of Release: <input></input>
+            Year of Release:{" "}
+            <input type="number" required minLength={4} maxLength={4}></input>
             <br />
             <br />
-            <button>Add Movie</button>
+            <button className="submit">Add Movie</button>
           </form>
         </div>
       </>

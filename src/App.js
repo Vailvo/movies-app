@@ -38,8 +38,6 @@ class App extends Component {
               </button>
             </header>
 
-            <p className="message">Welcome!</p>
-
             <Routes>
               <Route path="/" element={<HomePage />} exact />
               <Route path="/movies" element={<MoviePage />} exact />

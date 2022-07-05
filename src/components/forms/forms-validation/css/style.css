@@ -1,11 +1,16 @@
 .form-container {
-  border: 2px dashed orange;
+  border: 2px solid rgb(122, 224, 231);
+  border-radius: 5px;
+  /* background-color: rgba(123, 195, 253, 0.904); */
+  box-shadow: 7px black;
   display: table;
   margin: auto;
+  padding: 35px;
 }
 
 .form-field {
-  border: 2px dashed green;
+  /* border: 2px dashed green; */
+  color: rgb(86, 155, 160);
   padding: 10px;
   size: 300px;
   font-size: large;
@@ -15,8 +20,17 @@
   padding-left: 80px; */
 }
 
+input:invalid {
+  border: 2px solid red;
+}
+input:valid {
+  border: 2px solid green;
+}
 input {
   border-radius: 3px;
-  margin: 10px;
-  display: table-cell;
+  margin: auto 10px 10px 10px;
+  /* display: table-cell; */
+  display: block;
+  width: 155px;
+  height: 20px;
 }

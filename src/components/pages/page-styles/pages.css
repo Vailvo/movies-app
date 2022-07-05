@@ -1,0 +1,31 @@
+.message:hover {
+  color: blue;
+}
+.message {
+  /* border: green 2px dashed; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+  color: green;
+}
+.table-cont {
+  margin: auto;
+  /* border: 2px solid blueviolet; */
+  width: 700px;
+  height: 500px;
+}
+table {
+  width: fit-content;
+  margin: auto;
+}
+th {
+  border: 2px darkblue solid;
+  text-align: center;
+  padding: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+td {
+  border: lightcoral 2px solid;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}

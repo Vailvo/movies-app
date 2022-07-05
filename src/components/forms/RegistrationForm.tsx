@@ -8,11 +8,11 @@ class RegistrationForm extends Component {
         <h1>Register</h1>
         <div className="form-container">
           <form className="form-field">
-            Email: <input></input> <br />
-            Username: <input type="text"></input> <br />
-            Password: <input type="password"></input>
+            Email: <input required></input> <br />
+            Username: <input type="text" required></input> <br />
+            Password: <input type="password" required></input>
             <br />
-            Confirm Password: <input></input>
+            Confirm Password: <input required></input>
             <br />
             <br />
             <button>Register</button>

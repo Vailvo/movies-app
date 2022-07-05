@@ -7,9 +7,9 @@ class LoginForm extends Component {
       <>
         <div className="form-container">
           <form className="form-field">
-            Username: <input></input>
+            Username: <input type="text" required></input>
             <br />
-            Password: <input></input>
+            Password: <input type="password" required></input>
             <br />
             <button>Login</button>
           </form>
