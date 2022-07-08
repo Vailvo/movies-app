@@ -1,27 +1,30 @@
-body {
-  background-color: whitesmoke;
+.above-app {
+  background: linear-gradient(45deg, blueviolet, #7a00ff);
+  height: 1050px;
+  padding-top: 80px;
 }
 .App {
   text-align: center;
   margin: auto;
   padding: 80px;
-  /* border: yellowgreen dashed 2px; */
-  width: 800px;
-  height: fit-content;
-  background-color: aliceblue;
+  border: yellowgreen solid 2px;
+  width: 850px;
+  /* height: fit-content; */
+  background-color: rgb(31, 33, 43);
 }
 .logo-cont {
+  outline: 1px yellowgreen;
   text-align: left;
   margin-left: 20px;
   padding-left: 10px;
   color: blueviolet;
 }
 .navBar {
-  margin-top: 10px;
+  margin-top: auto 10px;
   padding: 20px;
   width: 800px;
   background: linear-gradient(45deg, white, #7a00ff, white);
-  border-bottom: 2px solid white;
+  border: yellowgreen solid 2px;
   border-radius: 5px;
   /* border: 2px dashed red; */
 }
@@ -87,6 +90,11 @@ button:after {
   border-radius: 10px;
 }
 
+button:hover {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+
 a:link {
   text-decoration: none;
   /* box-shadow: inset 0 0 0 0 olivedrab;
@@ -98,6 +106,6 @@ a:link {
 .subTitle {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: xx-large;
-  /* border: orange 2px dashed; */
+  outline: #48ff00 1px;
   margin-right: 10px;
 }

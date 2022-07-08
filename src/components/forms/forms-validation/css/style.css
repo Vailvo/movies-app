@@ -1,7 +1,7 @@
 .form-container {
   border: 2px solid rgb(122, 224, 231);
   border-radius: 5px;
-  /* background-color: rgba(123, 195, 253, 0.904); */
+  background-color: rgba(110, 135, 155, 0.904);
   box-shadow: 7px black;
   display: table;
   margin: auto;
@@ -10,14 +10,13 @@
 
 .form-field {
   /* border: 2px dashed green; */
-  color: rgb(86, 155, 160);
+  /* color: rgb(30, 62, 65); */
+  color: aqua;
   padding: 10px;
   size: 300px;
   font-size: large;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  /* text-align: left;
-  margin-left: 100px;
-  padding-left: 80px; */
+  text-transform: uppercase;
 }
 
 input:invalid {

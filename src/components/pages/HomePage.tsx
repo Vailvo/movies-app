@@ -8,29 +8,99 @@ class HomePage extends Component {
       <>
         <div className="home-cont">
           <h2 className="message">Welcome!</h2>
-          <h1>
-            <Link to="/register">Sign Up</Link> or{" "}
-            <Link to="/login">Login</Link>!
-          </h1>
+          {/* <Link to="/register" className="nav-link">
+            Sign Up
+          </Link>{" "}
+          |{" "}
+          <Link to="/login" className="nav-link">
+            Login
+          </Link> */}
           <div className="table-cont">
+            <h1>Movies Added by Users</h1>
             <table>
               <tr>
-                <th>Movie Title</th>
+                <div className="chevron"></div>
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
 
-                <th>Director</th>
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
 
-                <th>Year of Release</th>
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
 
-                <th>Added by</th>
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+                <div className="chevron"></div>
               </tr>
+            </table>
+            <br />
+            <table>
               <tr>
-                <td>Fifth Element</td>
+                <div className="chevron"></div>
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
 
-                <td>Luc Besson</td>
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
 
-                <td>1997</td>
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
 
-                <td>AngstArvia</td>
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+
+                <th>
+                  {" "}
+                  <p>Movie Title</p> <p>Director</p> <p>Year</p> <p>User</p>
+                </th>
+                <div className="chevron"></div>
               </tr>
             </table>
           </div>

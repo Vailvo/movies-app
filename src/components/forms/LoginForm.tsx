@@ -6,12 +6,29 @@ class LoginForm extends Component {
     return (
       <>
         <div className="form-container">
-          <form className="form-field">
-            Username: <input type="text" required></input>
+          <form
+            action="#"
+            method="post"
+            onSubmit="return ValidationEvent()"
+            className="form-field"
+          >
+            Username:{" "}
+            <input
+              type="text"
+              id="username"
+              placeholder="Username"
+              required
+            ></input>
             <br />
-            Password: <input type="password" required></input>
+            Password:{" "}
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            ></input>
             <br />
-            <button>Login</button>
+            <button type="submit">Login</button>
           </form>
         </div>
       </>
